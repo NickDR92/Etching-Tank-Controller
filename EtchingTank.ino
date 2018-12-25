@@ -1,3 +1,10 @@
+/*
+Author: Nick De Raeve
+Description:
+ This file contains the code for an arduino uno used in my etching tank. 
+ 
+ More description in a later state
+*/
 /************************************************************************
 *                      Includes
 ************************************************************************/
@@ -34,7 +41,7 @@ volatile int isChanged = LOW;
 
 // LCD
 LiquidCrystal_I2C lcd(0x3f,2,1,0,4,5,6,7);  // Set the LCD I2C address 0x3F
-#define BackligthPin    3 // Pin LCD
+#define BackligthPin    3 // Pin on LCD
 
 // Temperature
 volatile float Temperature = 25.4;
