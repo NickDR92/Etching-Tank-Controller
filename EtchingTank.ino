@@ -16,17 +16,17 @@ Description:
 *                      Variables
 ************************************************************************/
  // Input
-#define sensorPin       A0 //the analog pin the TMP36's Vout (sense) pin is connected to the resolution is 10 mV / degree centigrade with a 500 mV offset to allow for negative temperatures
-#define ButtonSlot1Pin  4
-#define ButtonSlot2Pin  5
-#define ButtonSlot3Pin  6
-#define ButtonSlot4Pin  7
+const byte sensorPin       A0 //the analog pin the TMP36's Vout (sense) pin is connected to the resolution is 10 mV / degree centigrade with a 500 mV offset to allow for negative temperatures
+const byte ButtonSlot1Pin  4
+const byte ButtonSlot2Pin  5
+const byte ButtonSlot3Pin  6
+const byte ButtonSlot4Pin  7
 
 // Output
-#define ValveSlot1Pin   13
-#define ValveSlot2Pin   12
-#define ValveSlot3Pin   11
-#define ValveSlot4Pin   10
+const byte ValveSlot1Pin   13
+const byte ValveSlot2Pin   12
+const byte ValveSlot3Pin   11
+const byte ValveSlot4Pin   10
 
 // Flags
 volatile int StateSlot1 = LOW;
@@ -41,7 +41,7 @@ volatile int isChanged = LOW;
 
 // LCD
 LiquidCrystal_I2C lcd(0x3f,2,1,0,4,5,6,7);  // Set the LCD I2C address 0x3F
-#define BackligthPin    3 // Pin on LCD
+const byte BackligthPin    3 // Pin on LCD
 
 // Temperature
 volatile float Temperature = 25.4;
